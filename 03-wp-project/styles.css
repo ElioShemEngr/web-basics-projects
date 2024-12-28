@@ -1,0 +1,70 @@
+body {
+    font-family:  "Quantico", "Geo";
+}
+
+.colors {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.colors-cyberpunk, .fonts-cyberpunk {
+    border: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.colors-cyberpunk div {
+    display: inline-block;
+    padding: 2px 120px;
+    margin: 20px 2px;
+    font-family: "Geo";
+    font-size: 18px;
+
+}
+
+.color01 {
+    background-color: #25BCFF;
+}
+
+.color02 {
+    background-color: #1781E8;
+}
+
+.color03 {
+    background-color: #9223FF;
+}
+
+.color04 {
+    background-color: #E62DE8;
+}
+
+
+.color05 {
+    background-color: #FF0DC0;
+}
+
+
+.fonts-cyberpunk div {
+    display: inline-block;
+    padding: 2px 80px;
+    margin: 20px 2px;
+
+}
+
+.font-quantico {
+    font-family: "Quantico";
+    font-size: 18px;
+}
+
+.font-geo {
+    font-family: "Geo";
+    font-size: 20px;
+
+}
+
+.font-bold {
+    text-decoration: none;
+    font-weight: bold;
+}

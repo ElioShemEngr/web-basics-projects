@@ -1,0 +1,136 @@
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+
+}
+
+body {
+    background-color: black;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+header {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Alinea logo a la izquierda y menú a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+ul {
+    gap: 20px;
+}
+
+/* Estilo del logo */
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+  }
+
+.navigation {
+    text-decoration: underline;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.banner-top {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Elementos en columna */
+    background-image: url('images/img-mission-background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    height: 700px; /* Altura del banner */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    position: relative; /* Para manejar contenido dentro del banner */
+    text-align: center; /* Centra texto dentro del banner */
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+.principal {
+    background-color: black;
+    width: 1500px;
+    opacity: 1;
+}
+
+.tea-month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.tea-month h2, 
+.tea-month h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tea-gallery {
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 20px; /* Espaciado entre elementos */
+    justify-content: center; /* Centra la galería */
+    flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+    
+}
+
+.tea-item {
+    display: flex;
+    flex-direction: column; /* Coloca la descripción debajo de la imagen */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+    opacity: 0.6;
+}
+
+.tea-item img {
+    width: 300px; /* Ajusta el tamaño de las imágenes */
+    height: 200px; /* Mantiene la proporción de las imágenes */
+}
+
+.banner-bottom {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Elementos en columna */
+    background-image: url('images/img-locations-background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    height: 700px; /* Altura del banner */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    position: relative; /* Para manejar contenido dentro del banner */
+    text-align: center; /* Centra texto dentro del banner */
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+.locations {
+    display: flex;
+    gap: 40px;
+}
+
+.square {
+    background-color: black;
+    width: 300px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h2, 
+.contact h5, 
+.contact p {
+    margin: 10px 0; /* Reduce el espacio vertical */
+    text-align: center; /* Opcional: centra el texto */
+}

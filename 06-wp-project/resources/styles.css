@@ -1,0 +1,218 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garantiza que cualquier borde o relleno añadido no aumente el tamaño total del elemento. */
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 16px;
+}
+
+body {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-principal {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    height: 60px;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#banner_principal {
+    background-image: url("../media/imagen002.jpg");
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#banner_principal .presentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#banner_principal .presentation h1 {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+#banner_principal .presentation p {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+#our_services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#our_services h2 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+#our_services p {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+#our_services .gallery_services {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#our_services .gallery_services figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our_services .gallery_services img {
+    width: 250px;
+    height: 150px;
+}
+
+
+#our_team {
+    background-image: url("../media/imagen003.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: black;
+    gap: 10px;
+
+}
+
+#our_team h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+#our_team .banner-team {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#our_team .banner-team div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#our_team .banner-team h3 {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem; 
+    font-weight: bold;
+}
+
+#our_team .banner-team p {
+    color: white;
+    font-size: 1rem;
+    line-height: 2.5rem; 
+}
+
+
+#our_team .banner-team img {
+    height: 400px;
+    width: auto;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;;
+}
+
+#contact h4 {
+    color: black;
+    font-size: 1.2rem;
+}
+
+footer{
+    width: 100%;;
+    background-color: black;
+    padding: 15px 0px 15px 10px;
+}
+

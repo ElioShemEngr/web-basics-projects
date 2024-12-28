@@ -1,0 +1,181 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px auto 1fr auto 50px;
+    height: 100vh;
+    grid-template-areas: 
+        "header header header"
+        "left-aside banner right-aside"
+        "left-aside main right-aside"
+        "left-aside contact right-aside"
+        "footer footer footer";
+    gap: 15px;
+    font-family: 'Geo', 'Quantico', 'Funnel Sans';
+    font-family: 16px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(89, 13, 189);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.banner {
+    grid-area: banner;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    justify-content: center;
+    background-image: url('media/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(173, 117, 97);
+}
+
+.banner h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.left-aside {
+    grid-area: left-aside;
+    background-color: rgb(96, 125, 139);
+    background-image: url('media/left-aside.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.right-aside {
+    grid-area: right-aside;
+    background-color: rgb(138, 151, 123);
+    background-image: url('media/right-aside.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(245, 245, 245);
+    padding: 0px 25px;
+    background-color: rgb(190, 55, 200);
+    padding-bottom: 30px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    /* text-align: center; */
+}
+
+main p {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.2;
+    
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .picture-gallery {
+    width: 350px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: rgb(255, 222, 244);
+    padding: 0px 0px 0px 25px;
+}
+
+.contact h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.contact p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+footer {
+    display: flex;
+    font-size: 1em;
+    text-align: justify;
+    align-items: center;
+    line-height: 1.2;
+    color: white;
+    grid-area: footer;
+    background-color: rgb(8, 0, 126);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 50px 1fr 50px auto 50px;
+        grid-template-areas: 
+            "header"
+            "banner"
+            "left-aside"
+            "main"
+            "right-aside"
+            "contact"
+            "footer";
+    }
+
+    nav ul {
+        justify-content: center;
+        padding-top: 15px;
+        padding-right: 0;
+    }
+
+    main .picture-gallery {
+        width: 100%;
+    }
+}
