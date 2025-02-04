@@ -64,6 +64,7 @@ console.log(anteriorHermanoEl);
 
 
 // MANIPULACION DE ELEMENTOS
+/*
 // ** Modificar Contenido **
 const titulo = document.querySelector("#titulo");
 // Textos
@@ -106,4 +107,15 @@ listaDeToppings.append(toppingNuevo);
 
 // Eliminar Elemento
 toppingNuevo.remove();
+*/
+
+//EVENTOS DEL DOM
+const toppings = document.getElementsByClassName("topping");
+
+
+for (topping of toppings) {
+    topping.addEventListener('click', (e) => {
+        console.log(e.target.innerText);
+    });
+}
 
