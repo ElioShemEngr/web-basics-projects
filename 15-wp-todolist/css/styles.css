@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/web-basics-projects/15-wp-todolist/assets/fondo.jpg');
+
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 0px;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: white;
+    min-height: 500px;
+    width: 500px;
+    font-family: Arial, Helvetica;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.entrada-tarea input {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+}
+
+#boton {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    margin: 20px 0px;
+    font-size: 1rem;
+}
+
+.contenedor-tareas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border-radius: 8px;
+    width: 400px;
+    background-color: #074180;
+    font-family: Arial, Helvetica;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: white;
+}
+
+#botones-tareas {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+
+#boton-tarea {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: #074180;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+#boton-tarea:hover {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: #a7b3b9;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
