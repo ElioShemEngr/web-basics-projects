@@ -18,7 +18,7 @@ body {
     border-radius: 20px;
     background-color: white;
     min-height: 500px;
-    width: 500px;
+    width: 650px;
     font-family: Arial, Helvetica;
     font-weight: 600;
     font-size: 2.5rem;
@@ -29,7 +29,7 @@ body {
 }
 
 .entrada-tarea input {
-    width: 400px;
+    width: 500px;
     height: 40px;
     border-radius: 8px;
     font-size: 1.4rem;
@@ -43,42 +43,68 @@ body {
     font-size: 1rem;
 }
 
-.contenedor-tareas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    margin: 10px 0px;
-    padding: 0px 10px;
-    border-radius: 8px;
-    width: 400px;
-    background-color: #074180;
-    font-family: Arial, Helvetica;
-    font-weight: 300;
-    font-size: 1.4rem;
+#contenedor-tareas {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.tarea {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
     color: white;
-}
-
-#botones-tareas {
+    background-color: #074180;
+    border-radius: 10px;
     display: flex;
-    gap: 10px; /* Espacio entre botones */
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid black;
 }
 
-#boton-tarea {
+
+.boton-estado {
     cursor: pointer;
     font-size: 1.3rem;
-    background-color: #074180;
     color: white;
     border: none;
     width: 30px;
     height: 30px;
+    margin: 0px 10px;
 }
 
-#boton-tarea:hover {
+.boton-estado:hover {
     cursor: pointer;
     font-size: 1.3rem;
     background-color: #a7b3b9;
     border: none;
     width: 30px;
     height: 30px;
+}
+
+.boton-eliminar {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: #a7b3b9;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
 }
