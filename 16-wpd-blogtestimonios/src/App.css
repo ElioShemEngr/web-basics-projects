@@ -1,22 +1,21 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-html, body {
+body, html {
   font-size: 18px;
   background-color: #f5f6f7;
 }
 
-.titulo-principal {
+h1 {
   max-width: 940px;
   font-size: 2.5em;
   font-family: Lato, sans-serif;
   font-weight: 700;
   line-height: 1.1;
-  margin: 40px 0px;
+  margin: 40px 0;
 }
-
 
 .App {
   min-height: 100vh;
@@ -34,3 +33,4 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+
